@@ -1,0 +1,232 @@
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+
+:root {
+  --primary-white: #fff;
+  --secondary-white: #ebebff;
+  --primary-orange: #ec5242;
+  --dark: #272a31;
+  --secondary-gray: #d3d3d3;
+  --primary-gray: #444140;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'lato', sans-serif;
+  box-sizing: border-box;
+  background-color: var(--primary-white);
+}
+
+p, h1, h2, h3, h4, h5, h6, ul {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 0px 1rem;
+}
+
+.header-container {
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger-menu {
+  fill: #747474;
+}
+
+.hero-wrapper {
+  padding-top: 20%;
+  padding-bottom: 5rem;
+}
+
+.hero-wrapper .greeting {
+  color: var(--primary-orange);
+  font-size: 1.3rem;
+  margin-bottom: .2rem;
+}
+
+.hero-wrapper .intro {
+  text-transform: uppercase;
+  color: var(--primary-orange);
+  font-family: 'COCOGOOSE', sans-serif;
+  line-height: 2rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.hero-wrapper .intro-description{
+  margin: 1rem 0px;
+  padding: 1rem;
+  border: solid .2rem var(--secondary-white);
+}
+
+.hero-wrapper .date {
+  font-family: 'COCOGOOSE', sans-serif;
+  color: var(--dark);
+  opacity: .8;
+}
+
+.program-wrapper {
+  background-color: var(--dark);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.program-container .title {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--secondary-white);
+}
+
+.program-detail {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1rem;
+  background-color: var(--primary-gray);
+  margin-top: .8rem;
+}
+
+.program-detail span {
+  display: flex;
+  align-items: center;
+  color: var(--primary-orange);
+  font-size: 1.4rem;
+  gap: .5rem;
+}
+
+.program-detail p {
+  grid-column-start: 3;
+  grid-column-end: 7;
+  font-size: .9rem;
+  color: var(--secondary-white);
+}
+
+.call-to-action {
+  margin-top: 2rem;
+  border: none;
+  background-color: var(--primary-orange);
+  padding: 1.4rem;
+  color: var(--secondary-white);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.featured-games {
+  padding: 2rem 0;
+}
+
+.featured-games .title {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.game-details-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.game-snapshot {
+  position: relative;
+  background-image: url(assets/img/checked.png);
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+
+}
+
+.game-snapshot img {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.game-details {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.game-details h4 {
+  font-size: 1rem;
+  color: var(--dark)
+}
+
+.game-details p {
+  color: var(--primary-orange);
+  font-size: .75rem;
+  margin: .2rem 0;
+}
+
+.game-details .line {
+  width: 1.3rem;
+  height: .1rem;
+  background-color: var(--primary-gray);
+  opacity: .2;
+}
+
+.game-details h5 {
+  font-size: .7rem;
+  margin-top: .8rem;
+}
+
+.featured-games button {
+  padding: .7rem 0;
+  width: 100%;
+  margin-top: 2.5rem;
+  background-color: var(--primary-white);
+  border: 1px solid;
+  border-color: rgb(192, 192, 192, .4);
+}
+
+.featured-games button svg {
+  margin-left: .4rem;
+}
+
+.partner-wrapper {
+  background-color: var(--dark);
+  padding: 2rem 0;
+}
+
+.partner-wrapper .title {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--secondary-white);
+}
+
+.partner-logo {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 0 2rem;
+}
+
+.partner-wrapper img {
+  width: 5rem;
+  height: 3rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .7rem;
+  line-height: 1rem;
+  gap: 2rem;
+}
+
+.footer img {
+  width: 7rem;
+  height: 6rem;
+}

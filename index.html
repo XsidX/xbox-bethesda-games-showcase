@@ -4,62 +4,156 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>Xbox & Bethesda Games Showcase</title>
 </head>
 <body>
-  <header>
-
+  <header class="container">
+    <div class="header-container">
+      <a href="/">
+        <svg class="hamburger-menu" viewBox="0 0 100 80" width="25" height="25">
+          <rect width="100" height="20"></rect>
+          <rect y="30" width="100" height="20"></rect>
+          <rect y="60" width="100" height="20"></rect>
+        </svg>
+      </a>
+    </div>
   </header>
-  <section class="hero">
-    <p class="greeting">
-
-    </p>
-    <h1 class="intro">
-
-    </h1>
-    <p>
-
-    </p>
-    <h2 class="date">
-
-    </h2>
-    <p class="location">
-
-    </p>
+  <section class="hero-wrapper">
+    <div class="container">
+      <p class="greeting">
+        "Hello! Xbox world"
+      </p>
+      <h1 class="intro">
+        Xbox & Bethesda Games Showcase
+      </h1>
+      <p class="intro-description">
+        Play brand new games the same day they release and hundreds of
+        additional high-quality games with Xbox Game Pass.
+      </p>
+      <h2 class="date">
+        2022.06.20(MON) ~ 21(TUE)
+      </h2>
+      <p class="location">
+        @ Redmond, Washington, US, Microsoft Headquarters
+      </p>
+    </div>
   </section>
 
-  <section class="program">
+  <section class="program-wrapper">
+    <div class="program-container container">
+      <h3 class="title">
+        Main Program
+      </h3>
+      <div class="program-content">
+        <div class="program-detail">
+          <span>
+            <img src="assets/icons/lecture.png" alt="icon of a speaker">
+            <h5>Lecture</h5>
+          </span>
+          <p>Listen to developers from various xbox game studios about how your favurite games are developed</p>
+        </div>
+        <div class="program-detail">
+          <span>
+            <img src="assets/icons/lecture.png" alt="icon of a speaker">
+            <h5>Lecture</h5>
+          </span>
+          <p>Listen to developers from various xbox game studios about how your favurite games are developed</p>
+        </div>
+        <div class="program-detail">
+          <span>
+            <img src="assets/icons/lecture.png" alt="icon of a speaker">
+            <h5>Lecture</h5>
+          </span>
+          <p>Listen to developers from various xbox game studios about how your favurite games are developed</p>
+        </div>
+        <div class="program-detail">
+          <span>
+            <img src="assets/icons/lecture.png" alt="icon of a speaker">
+            <h5>Lecture</h5>
+          </span>
+          <p>Listen to developers from various xbox game studios about how your favurite games are developed</p>
+        </div>
+        <div class="program-detail">
+          <span>
+            <img src="assets/icons/lecture.png" alt="icon of a speaker">
+            <h5>Lecture</h5>
+          </span>
+          <p>Listen to developers from various xbox game studios about how your favurite games are developed</p>
+        </div>
+      </div>
+      <button class="call-to-action">
+        <a>Join Xbox Insider Showcase</a>
+      </button>
+    </div>
+  </section>
+
+  <section class="featured-games">
     <h3 class="title">
-
+      Featured Games
     </h3>
-    <div class="program-container">
-      <div>
-        
+    <div class="container">
+      <div class="game-details-wrapper">
+        <div class="game-snapshot">
+          <img src="assets/img/" alt="picture of the starfield game">
+        </div>
+        <div class="game-details">
+          <h4>Yochai Benkler</h4>
+          <p><i>Berkman Professor of Enterpreneural Legal Studies at Havard Law School</i></p>
+          <div class="line"></div>
+          <h5>Benkler studies comons-based peer production and published his seminal book. The wealth of Networks in 2006.
+          </h5>
+        </div>
       </div>
+      <div class="game-details-wrapper">
+        <div class="game-snapshot">
+          <img src="assets/img/" alt="picture of the starfield game">
+        </div>
+        <div class="game-details">
+          <h4>Yochai Benkler</h4>
+          <p><i>Berkman Professor of Enterpreneural Legal Studies at Havard Law School</i></p>
+          <div class="line"></div>
+          <h5>Benkler studies comons-based peer production and published his seminal book. The wealth of Networks in 2006.
+          </h5>
+        </div>
+      </div>
+      <button>
+        MORE
+        <svg width="10" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L7.70711 7.70711C7.31658 8.09763 6.68342 8.09763 6.29289 7.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
+            fill="#ec5242" />
+        </svg>
+      </button>
     </div>
-    <button>
-      <a></a>
-    </button>
   </section>
 
-  <section class="featured-speakers">
-    <div class="speaker-wrapper">
-      <img src="" alt="">
-      <div class="speaker-details">
-        <h4></h4>
-        <p></p>
-        <h5></h5>
-      </div>
-    </div>
-  </section>
-
-  <section class="partner">
-    <h4 class="title"></h4>
-    
+  <section class="partner-wrapper">
+    <h4 class="title">Partner</h4>
+    <ul class="partner-logo">
+      <li>
+        <img src="assets/svg/343_Industries.svg" alt="343 Industries logo">
+      </li>
+      <li>
+        <img src="assets/svg/Xbox_Game_Studios.svg" alt="343 Industries logo">
+      </li>
+      <li>
+        <img src="assets/svg/Bethesda_Game_Studios.svg" alt="343 Industries logo">
+      </li>
+      <li>
+        <img src="assets/svg/Compulsion_Games.svg" alt="343 Industries logo">
+      </li>
+      <li>
+        <img src="assets/svg/Obsidian_Entertainment.svg" alt="343 Industries logo">
+      </li>
+    </ul>
   </section>
 
   <footer class="footer">
-
+    <a href="/">
+      <img src="assets/svg/Microsoft-Logo.svg" alt="Microsoft-logo">
+    </a>
+    <p>2022 Game Pass Showcase <br> Some Rights Reserved</p>
   </footer>
 
 </body>
