@@ -1,0 +1,83 @@
+.about-hero-wrapper {
+  text-align: center;
+  padding-top: 10%;
+}
+
+.about-hero-wrapper .greeting {
+  margin-bottom: 1rem;
+}
+
+.about-hero-wrapper .intro {
+  margin-bottom: 2.5rem;
+}
+
+.about-hero-wrapper .intro-description {
+  background-color: var(--primary-white);
+  padding: 1rem;
+  border: 1px solid;
+  border-color: rgb(192, 192, 192, .4);
+  margin-bottom: 1.5rem;
+  font-size: .875rem;
+  line-height: 1.3rem;
+}
+
+.about-hero-wrapper .intro-contact {
+  font-size: .75rem;
+  line-height: 1.3rem;
+  margin: 0 1.5rem;
+}
+
+.about-hero-wrapper .intro-mail a {
+  border-bottom: solid 1px rgb(120, 120, 120, .7);
+  display: inline;
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.past-showcases {
+  border-top: solid 1px rgb(192, 192, 192, .4);
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+.past-showcases h6 {
+  margin: 1rem 0 2rem 0;
+  font-size: .875rem;
+  font-weight: 400;
+}
+
+.showcase-thumbnail {
+  position: relative;
+  height: 25vh;
+  margin: 0 2rem;
+}
+
+.showcase-thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+.showcase-thumbnail .description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: var(--primary-white);
+  background-color: rgba(224, 104, 104, .6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  font-family: 'COCOGOOSE', sans-serif;
+}
+
+.showcase-thumbnail h5 {
+  font-size: 1.6rem;
+}
+
+.showcase-thumbnail p {
+  font-size: .75rem;
+}

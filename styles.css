@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 @import url('http://fonts.cdnfonts.com/css/cocogoose');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap');
 
@@ -13,7 +14,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'lato', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   box-sizing: border-box;
   background-color: var(--primary-white);
 }
@@ -21,6 +22,10 @@ body {
 p, h1, h2, h3, h4, h5, h6, ul {
   padding: 0;
   margin: 0;
+}
+
+p {
+  font-size: .875rem;
 }
 
 .container {
@@ -43,25 +48,25 @@ p, h1, h2, h3, h4, h5, h6, ul {
   padding-bottom: 5rem;
 }
 
-.hero-wrapper .greeting {
+.greeting {
   color: var(--primary-orange);
   font-size: 1.3rem;
   margin-bottom: .2rem;
 }
 
-.hero-wrapper .intro {
+.intro {
   text-transform: uppercase;
   color: var(--primary-orange);
   font-family: 'COCOGOOSE', sans-serif;
   line-height: 2rem;
   font-size: 1.8rem;
-  font-weight: 900;
 }
 
 .hero-wrapper .intro-description{
   margin: 1rem 0px;
   padding: 1rem;
   border: solid .2rem var(--secondary-white);
+  line-height: 1.3rem;
 }
 
 .hero-wrapper .date {
@@ -77,7 +82,7 @@ p, h1, h2, h3, h4, h5, h6, ul {
 }
 
 .program-container .title {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   color: var(--secondary-white);
 }
@@ -95,14 +100,15 @@ p, h1, h2, h3, h4, h5, h6, ul {
   display: flex;
   align-items: center;
   color: var(--primary-orange);
-  font-size: 1.4rem;
+  font-size: .875rem;
   gap: .5rem;
 }
 
 .program-detail p {
   grid-column-start: 3;
   grid-column-end: 7;
-  font-size: .9rem;
+  font-size: .75rem;
+  text-align: left;
   color: var(--secondary-white);
 }
 
@@ -121,7 +127,7 @@ p, h1, h2, h3, h4, h5, h6, ul {
 }
 
 .featured-games .title {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -196,7 +202,7 @@ p, h1, h2, h3, h4, h5, h6, ul {
 }
 
 .partner-wrapper .title {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   text-align: center;
   color: var(--secondary-white);
