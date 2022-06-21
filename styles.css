@@ -38,7 +38,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .container {
-    padding: 0px 9rem;
+    padding: 0px 8rem;
   }
 }
 
@@ -187,9 +187,19 @@ header {
 }
 
 .program-wrapper {
-  background-color: var(--dark);
   padding: 2rem 0;
   text-align: center;
+  background-image: url(assets/img/checked-pattern.png);
+  background-repeat: repeat;
+  background-color: rgb(39, 42, 50);
+}
+
+@media screen and (min-width: 768px) {
+  .program-wrapper {
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .program-container .title {
@@ -203,11 +213,11 @@ header {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 1rem;
-  background-color: var(--primary-gray);
+  background: rgba(255, 255, 255, 0.1);
   margin-top: .8rem;
 }
 
-.program-detail span {
+.program-detail .icon {
   display: flex;
   align-items: center;
   color: var(--primary-orange);
@@ -223,6 +233,43 @@ header {
   color: var(--secondary-white);
 }
 
+@media screen and (min-width: 768px) {
+  .program-wrapper {
+    height: 85vh;
+  }
+
+  .program-content {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    column-gap: .2rem;
+  }
+
+  .program-detail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.5rem;
+  }
+
+  .program-detail .icon {
+    flex-direction: column;
+  }
+
+  .program-detail .icon h5 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .program-detail img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .program-detail p {
+    font-size: 0.8125rem;
+    text-align: center;
+  }
+}
+
 .call-to-action {
   margin-top: 2rem;
   border: none;
@@ -231,6 +278,22 @@ header {
   color: var(--secondary-white);
   font-size: 1rem;
   font-weight: 700;
+}
+
+.call-to-action-lg-screen {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .call-to-action {
+    display: none;
+  }
+
+  .call-to-action-lg-screen {
+    display: inline;
+    color: var(--secondary-white);
+    text-decoration: none;
+  }
 }
 
 .featured-games {
