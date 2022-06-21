@@ -306,7 +306,7 @@ header {
   text-align: center;
 }
 
-.game-details-wrapper {
+.game-details-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 1rem;
@@ -322,8 +322,8 @@ header {
 }
 
 .game-snapshot img {
-  width: 6rem;
-  height: 6rem;
+  width: 88%;
+  height: 90%;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -341,7 +341,7 @@ header {
 
 .game-details p {
   color: var(--primary-orange);
-  font-size: .75rem;
+  font-size: .8125rem;
   margin: .2rem 0;
 }
 
@@ -353,8 +353,9 @@ header {
 }
 
 .game-details h5 {
-  font-size: .7rem;
+  font-size: .8125rem;
   margin-top: .8rem;
+  padding-bottom: .5rem;
 }
 
 .featured-games button {
@@ -368,6 +369,36 @@ header {
 
 .featured-games button svg {
   margin-left: .4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .featured-games {
+    padding: 4rem 0;
+  }
+
+  .game-details-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2rem;
+  }
+
+  .game-details p {
+    margin: .5rem 0;
+  }
+
+  .game-details h4 {
+    font-size: 1.375rem;
+  }
+
+  .game-details h5 {
+    margin-top: 1.5rem;
+    padding-bottom: .5rem;
+  }
+
+  .featured-games button {
+    display: none;
+  }
+
 }
 
 .partner-wrapper {
