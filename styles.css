@@ -32,20 +32,98 @@ p {
   padding: 0px 1rem;
 }
 
-.header-container {
+header {
+  background-color: var(--primary-white);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0px 9rem;
+  }
+}
+
+.nav-container {
   height: 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .nav-container {
+    height: 5rem; 
+  }
+
+  header {
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  }
+
+}
+
+.nav-container .logo img{
+  width: 10rem;
+  height: 6rem;
+}
+
+.nav-container ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+
+}
+
+.nav-container ul a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
 .hamburger-menu {
-  fill: #747474;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+.bar-top,
+.bar-middle,
+.bar-bottom {
+  height: 4px;
+  background: var(--primary-gray);
+  margin: 3px 0;
+  transform-origin: left;
+  transition: all 0.5s;
+}
+
+.hamburger-menu:hover .bar-top {
+  transform: rotate(45deg);
+}
+
+.hamburger-menu:hover .bar-middle {
+  transform: translateX(1rem);
+  opacity: 0;
+}
+
+.hamburger-menu:hover .bar-bottom {
+  transform: rotate(-45deg);
 }
 
 .hero-wrapper {
   padding-top: 20%;
   padding-bottom: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-wrapper {
+    padding-top: 7rem;
+  }
 }
 
 .greeting {
@@ -62,6 +140,12 @@ p {
   font-size: 1.8rem;
 }
 
+@media screen and (max-width: 576px) {
+  .intro br {
+    display: none;
+  }
+}
+
 .hero-wrapper .intro-description{
   margin: 1rem 0px;
   padding: 1rem;
@@ -70,9 +154,36 @@ p {
 }
 
 .hero-wrapper .date {
-  font-family: 'COCOGOOSE', sans-serif;
-  color: var(--dark);
-  opacity: .8;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  opacity: .6;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-wrapper .greeting {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-wrapper .intro {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+
+  .hero-wrapper .intro-description {
+    width: 70%;
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+
+  .hero-wrapper .date {
+    font-size: 2.25rem;
+  }
+
+  .hero-wrapper .location {
+    margin-top: .6rem;
+    font-size: 1.25rem;
+  }
 }
 
 .program-wrapper {
