@@ -50,6 +50,11 @@ header {
   align-items: center;
 }
 
+.nav-container .watch-live {
+  border: 3px solid var(--primary-orange);
+  padding: .4rem;
+}
+
 @media screen and (min-width: 768px) {
   .nav-container {
     height: 5rem; 

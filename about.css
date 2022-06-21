@@ -11,6 +11,10 @@
   margin-bottom: 2.5rem;
 }
 
+.about-hero-wrapper p span {
+  display: none;
+}
+
 .about-hero-wrapper .intro-description {
   background-color: var(--primary-white);
   padding: 1rem;
@@ -35,10 +39,70 @@
   font-weight: 700;
 }
 
+.about-hero-wrapper .intro-mail svg {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .about-hero-wrapper {
+    padding-top: 5%;
+    display: flex;
+  }
+
+  .about-hero-wrapper .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-hero-wrapper .intro {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .about-hero-wrapper .intro-description {
+    width: 70%;
+  }
+
+  .about-hero-wrapper .intro-description {
+    padding: 2rem 1rem;
+    line-height: 1.7rem;
+  }
+
+  .about-hero-wrapper p span {
+    display: block;
+  }
+
+  .about-hero-wrapper .intro-contact {
+    line-height: 1.7rem;
+  }
+
+  .about-hero-wrapper .intro-mail svg {
+    display: inline;
+    width: .6rem;
+    height: .6rem;
+    cursor: pointer;
+  }
+
+  .about-hero-wrapper .intro-mail svg {
+    transition: all ease-in-out 150ms;
+  }
+
+  .about-hero-wrapper .intro-mail:hover svg{
+    transform: translateX(2px);
+  }
+}
+
 .past-showcases {
   border-top: solid 1px rgb(192, 192, 192, .4);
   text-align: center;
   margin: 2.5rem 0;
+}
+
+.past-showcases h3 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .past-showcases h6 {
@@ -51,6 +115,7 @@
   position: relative;
   height: 25vh;
   margin: 0 2rem;
+  cursor: pointer;
 }
 
 .showcase-thumbnail img {
@@ -72,6 +137,11 @@
   align-items: center;
   gap: .5rem;
   font-family: 'COCOGOOSE', sans-serif;
+  transition: all ease-in-out 150ms;
+}
+
+.showcase-thumbnail .description:hover {
+  background-color: rgba(224, 104, 104, .2);
 }
 
 .showcase-thumbnail h5 {
@@ -80,4 +150,25 @@
 
 .showcase-thumbnail p {
   font-size: .75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .past-showcases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+  }
+
+  .showcases-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .showcase-thumbnail {
+    margin: 0 1.5rem 0 0;
+    height: 45vh;
+    width: 38vw;
+  }
+
 }
