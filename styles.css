@@ -33,6 +33,13 @@ p {
   padding: 0px 1rem;
 }
 
+.title::after {
+  content: '';
+  width: 3rem;
+  height: 1px;
+  background-color: var(--primary-orange);
+}
+
 header {
   background-color: var(--primary-white);
 }
@@ -146,6 +153,20 @@ header {
   font-size: 1.8rem;
 }
 
+.hero-wrapper {
+  background-image: url(assets/img/hero-bg.png);
+  background-size: cover;
+}
+
+.hero-wrapper .intro {
+  display: inline;
+  background-image: url(assets/img/text-bg.JPG);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgb(240, 75, 46, .7);
+}
+
 @media screen and (max-width: 576px) {
   .intro br {
     display: none;
@@ -157,6 +178,7 @@ header {
   padding: 1rem;
   border: solid .2rem var(--secondary-white);
   line-height: 1.3rem;
+  background-color: var(--primary-white);
 }
 
 .hero-wrapper .date {
@@ -299,6 +321,9 @@ header {
     display: inline;
     color: var(--secondary-white);
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: .875rem;
+    border-bottom: var(--secondary-white) solid 1px;
   }
 }
 
