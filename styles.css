@@ -422,6 +422,10 @@ header {
   margin-top: 2.5rem;
 }
 
+.game-details-container:nth-last-child(-n+5) {
+  display: none;
+}
+
 .game-snapshot {
   position: relative;
   background-image: url(assets/img/checked.png);
@@ -600,6 +604,7 @@ header {
 
   .footer p {
     font-size: .7rem;
+    margin-bottom: .8rem;
   }
 
   .footer p br{

@@ -37,22 +37,11 @@ const  featuredGames = [
   },
 ]
 const moreBtn = document.querySelector('.more-btn')
-const hiddenGames = featuredGames.splice(2, 4)
-
-console.log('hidden: ', hiddenGames)
-
-// moreBtn.addEventListener('click', () => {
-  featuredGames.splice(2, 0, ...hiddenGames)
-  console.log('click')
-// })
-
-console.log('gamesarr: ', featuredGames)
 
 const featuredGame = document.querySelector('.game-details-wrapper')
 featuredGames.forEach((game) => {
   const featuredGameContainer = document.createElement('div')
   featuredGameContainer.classList.add('game-details-container')
-
   featuredGameContainer.innerHTML = `
     <div class="game-snapshot">
       <img src="assets/img/${game.thumbnail}" alt="picture of the starfield game">
@@ -65,4 +54,11 @@ featuredGames.forEach((game) => {
     </div>
   `
   featuredGame.insertBefore(featuredGameContainer, featuredGame.children[0])
+})
+
+const gamesContainer = document.querySelectorAll('.game-details-container')
+moreBtn.addEventListener('click', () => {
+  gamesContainer.forEach((game) => {
+    game.style.display = 'grid';
+  })
 })
