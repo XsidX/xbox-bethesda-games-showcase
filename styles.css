@@ -29,15 +29,13 @@ p {
   font-size: .875rem;
 }
 
-.container {
-  padding: 0px 1rem;
+a {
+  text-decoration: none;
+  color: var(--dark)
 }
 
-.title::after {
-  content: '';
-  width: 3rem;
-  height: 1px;
-  background-color: var(--primary-orange);
+.container {
+  padding: 0px 1rem;
 }
 
 header {
@@ -51,7 +49,7 @@ header {
 }
 
 .nav-container {
-  height: 2.5rem;
+  height: 4.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,6 +71,16 @@ header {
 
 }
 
+@media screen and (max-width: 576px) {
+  .nav-container .logo {
+    order: 999;
+  }
+
+  .nav-container {
+    width: 72%;
+  }
+}
+
 .nav-container .logo img{
   width: 10rem;
   height: 6rem;
@@ -82,7 +90,7 @@ header {
   list-style: none;
   display: flex;
   gap: 3rem;
-
+  display: none;
 }
 
 .nav-container ul a {
@@ -102,6 +110,10 @@ header {
 @media screen and (min-width: 768px) {
   .hamburger-menu {
     display: none;
+  }
+
+  .nav-container ul {
+    display: flex;
   }
 }
 
@@ -126,6 +138,49 @@ header {
 
 .hamburger-menu:hover .bar-bottom {
   transform: rotate(-45deg);
+}
+
+.side-navigation {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .side-navigation {
+    position: fixed;
+    inset: 0 0 0 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+  }
+
+  .side-navigation .container {
+    position: relative;
+    padding-top: 50%;
+    height: 100%;
+  }
+
+  .side-navigation .background {
+    position: absolute;
+    inset: 0;
+    background: hsl(16 87% 62% / 0.7);
+    backdrop-filter: blur(.4rem);
+    z-index: -1;
+  }
+
+  .side-navigation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  .side-navigation ul a {
+    font-size: 1.5rem;
+    color: var(--primary-white);
+    font-family: 'COCOGOOSE', sans-serif;
+  }
 }
 
 .hero-wrapper {
@@ -176,15 +231,15 @@ header {
 .hero-wrapper .intro-description{
   margin: 1rem 0px;
   padding: 1rem;
-  border: solid .2rem var(--secondary-white);
+  border: solid .2rem var(--primary-white);
   line-height: 1.3rem;
-  background-color: var(--primary-white);
 }
 
 .hero-wrapper .date {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   opacity: .6;
+  margin-bottom: .5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -339,8 +394,8 @@ header {
 
 .game-details-container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  column-gap: 1rem;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  column-gap: .5rem;
   margin-top: 2.5rem;
 }
 
@@ -349,7 +404,8 @@ header {
   background-image: url(assets/img/checked.png);
   background-repeat: no-repeat;
   background-size: 50% 50%;
-
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .game-snapshot img {
@@ -361,8 +417,8 @@ header {
 }
 
 .game-details {
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 6;
 }
 
 .game-details h4 {
@@ -494,6 +550,10 @@ header {
   height: 6rem;
 }
 
+.footer .notice {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .footer {
     padding: 2rem 0;
@@ -518,6 +578,7 @@ header {
   }
 
   .footer .notice {
+    display: inline;
     margin-top: 1rem;
     font-size: .7rem;
     font-family: monospace, sans-serif;
