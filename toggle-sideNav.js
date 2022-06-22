@@ -1,6 +1,6 @@
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const mobileMenu = document.querySelector('.side-navigation');
-const menuLinks = document.querySelectorAll('.nav-link');
+const menuLinks = document.querySelectorAll('.menuc-link');
 
 
 function toggleMobileMenu(element) {

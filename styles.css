@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 @import url('http://fonts.cdnfonts.com/css/cocogoose');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
 :root {
   --primary-white: #fff;
   --secondary-white: #ebebff;
   --primary-orange: #ec5242;
-  --dark: #272a31;
+  --dark: #272a32;;
   --secondary-gray: #d3d3d3;
   --primary-gray: #444140;
 }
@@ -37,6 +37,10 @@ a {
 
 .container {
   padding: 0px 1rem;
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }
 
 header {
@@ -145,7 +149,6 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
   .side-navigation {
     position: fixed;
     inset: 0 0 0 30%;
@@ -155,38 +158,38 @@ header {
     transition: transform 400ms ease-out;
   }
 
-  .side-navigation .container {
-    position: relative;
-    padding-top: 50%;
-    height: 100%;
-  }
-
-  .side-navigation .background {
-    position: absolute;
-    inset: 0;
-    background: hsl(16 87% 62% / 0.7);
-    backdrop-filter: blur(.4rem);
-    z-index: -1;
-  }
-
-  .side-navigation ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.4rem;
-    line-height: 1.8rem;
-  }
-
-  .side-navigation ul a {
-    font-size: 1.5rem;
-    color: var(--primary-white);
-    font-family: 'COCOGOOSE', sans-serif;
-  }
-
-  .side-navigation[data-visible="true"] {
-    transform: translateX(0%);
-  }
+.side-navigation .container {
+  position: relative;
+  padding-top: 50%;
+  height: 100%;
 }
+
+.side-navigation .background {
+  position: absolute;
+  inset: 0;
+  background: hsl(16 87% 62% / 0.7);
+  backdrop-filter: blur(.4rem);
+  z-index: -1;
+}
+
+.side-navigation ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.4rem;
+  line-height: 1.8rem;
+}
+
+.side-navigation ul a {
+  font-size: 1.5rem;
+  color: var(--primary-white);
+  font-family: 'COCOGOOSE', sans-serif;
+}
+
+.side-navigation[data-visible="true"] {
+  transform: translateX(0%);
+}
+
 
 .hero-wrapper {
   padding-top: 20%;
@@ -388,7 +391,22 @@ header {
 }
 
 .featured-games {
-  padding: 2rem 0;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 576px) {
+  .featured-games {
+    padding: 2rem 6rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .featured-games {
+    padding: 2rem 1rem;
+  }
 }
 
 .featured-games .title {
@@ -428,7 +446,8 @@ header {
 
 .game-details h4 {
   font-size: 1rem;
-  color: var(--dark)
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }
 
 .game-details p {
@@ -445,9 +464,11 @@ header {
 }
 
 .game-details h5 {
-  font-size: .8125rem;
-  margin-top: .8rem;
+  margin-top: 1.4rem;
+  font-size: .9rem;
   padding-bottom: .5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 .featured-games button {
@@ -457,17 +478,14 @@ header {
   background-color: var(--primary-white);
   border: 1px solid;
   border-color: rgb(192, 192, 192, .4);
+  cursor: pointer;
 }
 
 .featured-games button svg {
   margin-left: .4rem;
 }
 
-@media screen and (min-width: 768px) {
-  .featured-games {
-    padding: 4rem 0;
-  }
-
+@media screen and (min-width: 900px) {
   .game-details-wrapper {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -476,6 +494,7 @@ header {
 
   .game-details p {
     margin: .5rem 0;
+    line-height: 1.5rem;
   }
 
   .game-details h4 {
@@ -493,17 +512,23 @@ header {
 
 }
 
+@media screen and (min-width: 1200px) {
+  .game-details-wrapper {
+    max-width: 65rem;
+  }
+}
+
 .partner-wrapper {
   background-color: rgb(39, 42, 50, .85);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 20vh;
+  padding: 2rem 0;
 }
 
 @media screen and (min-width: 768px) {
   .partner-wrapper {
-    height: 35vh;
+    padding: 5rem 0;
   }
 }
 
@@ -532,7 +557,6 @@ header {
 @media screen and (min-width: 768px) {
   .partner-wrapper img {
     width: 7rem;
-    height: 4rem;
   }
 
   .partner-logo {
