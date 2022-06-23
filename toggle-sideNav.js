@@ -1,17 +1,16 @@
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const mobileMenu = document.querySelector('.side-navigation');
-const menuLinks = document.querySelectorAll('.menuc-link');
-
+const menuLinks = document.querySelectorAll('.menu-link');
 
 function toggleMobileMenu(element) {
   element.addEventListener('click', () => {
-    const visibility = mobileMenu.getAttribute('data-visible')
+    const visibility = mobileMenu.getAttribute('data-visible');
     if (visibility === 'false') {
-      mobileMenu.setAttribute('data-visible', true)
+      mobileMenu.setAttribute('data-visible', true);
     } else {
-      mobileMenu.setAttribute('data-visible', false)
+      mobileMenu.setAttribute('data-visible', false);
     }
-    hamburgerMenu.classList.toggle('menu-close')
+    hamburgerMenu.classList.toggle('menu-close');
     document.body.classList.toggle('no-scroll');
   });
 }

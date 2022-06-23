@@ -19,20 +19,20 @@
   background-color: var(--primary-white);
   padding: 1rem;
   border: 1px solid;
-  border-color: rgb(192, 192, 192, .4);
+  border-color: rgb(192, 192, 192, 0.4);
   margin-bottom: 1.5rem;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.3rem;
 }
 
 .about-hero-wrapper .intro-contact {
-  font-size: .75rem;
+  font-size: 0.75rem;
   line-height: 1.3rem;
   margin: 0 1.5rem;
 }
 
 .about-hero-wrapper .intro-mail a {
-  border-bottom: solid 1px rgb(120, 120, 120, .7);
+  border-bottom: solid 1px rgb(120, 120, 120, 0.7);
   display: inline;
   color: var(--dark);
   text-decoration: none;
@@ -62,9 +62,6 @@
 
   .about-hero-wrapper .intro-description {
     width: 70%;
-  }
-
-  .about-hero-wrapper .intro-description {
     padding: 2rem 1rem;
     line-height: 1.7rem;
   }
@@ -79,22 +76,19 @@
 
   .about-hero-wrapper .intro-mail svg {
     display: inline;
-    width: .6rem;
-    height: .6rem;
+    width: 0.6rem;
+    height: 0.6rem;
     cursor: pointer;
-  }
-
-  .about-hero-wrapper .intro-mail svg {
     transition: all ease-in-out 150ms;
   }
 
-  .about-hero-wrapper .intro-mail:hover svg{
+  .about-hero-wrapper .intro-mail:hover svg {
     transform: translateX(2px);
   }
 }
 
 .past-showcases {
-  border-top: solid 1px rgb(192, 192, 192, .4);
+  border-top: solid 1px rgb(192, 192, 192, 0.4);
   text-align: center;
   margin: 2.5rem 0;
 }
@@ -107,7 +101,7 @@
 
 .past-showcases h6 {
   margin: 1rem 0 2rem 0;
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 400;
 }
 
@@ -130,18 +124,18 @@
   right: 0;
   bottom: 0;
   color: var(--primary-white);
-  background-color: rgba(224, 104, 104, .6);
+  background-color: rgba(224, 104, 104, 0.6);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
   font-family: 'COCOGOOSE', sans-serif;
   transition: all ease-in-out 150ms;
 }
 
 .showcase-thumbnail .description:hover {
-  background-color: rgba(224, 104, 104, .2);
+  background-color: rgba(224, 104, 104, 0.2);
 }
 
 .showcase-thumbnail h5 {
@@ -149,7 +143,7 @@
 }
 
 .showcase-thumbnail p {
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -170,5 +164,4 @@
     height: 48vh;
     width: 38vw;
   }
-
 }
