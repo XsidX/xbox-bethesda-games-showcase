@@ -465,7 +465,7 @@ header {
   margin-top: 2.5rem;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 900px) {
   .game-details-container:nth-last-child(-n+5) {
     display: none;
   }
