@@ -12,7 +12,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://xsidx.github.io/first-capstone/)
+[Live Demo Link](https://xsidx.github.io/xbox-bethesda-games-showcase/)
 
 ## Getting Started
 
