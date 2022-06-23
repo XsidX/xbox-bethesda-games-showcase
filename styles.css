@@ -39,18 +39,33 @@ a {
   padding: 0px 1rem;
 }
 
+@media screen and (min-width: 576px) {
+  .container {
+    padding: 0px 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0px 8rem;
+  }
+}
+
+.title::after {
+  display: flex;
+  content: "";
+  width: 3rem;
+  height: .1rem;
+  background-color: var(--primary-orange);
+  margin-top: .8rem;
+}
+
 .no-scroll {
   overflow-y: hidden;
 }
 
 header {
   background-color: var(--primary-white);
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    padding: 0px 8rem;
-  }
 }
 
 .nav-container {
@@ -76,13 +91,27 @@ header {
 
 }
 
-@media screen and (max-width: 576px) {
-  .nav-container .logo {
-    order: 999;
-  }
-
+@media screen and (max-width: 768px) {
   .nav-container {
     width: 72%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-container {
+    width: 63%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-container .logo {
+    order: 999;
   }
 }
 
@@ -94,7 +123,7 @@ header {
 .nav-container ul {
   list-style: none;
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   display: none;
 }
 
@@ -112,7 +141,7 @@ header {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hamburger-menu {
     display: none;
   }
@@ -160,8 +189,10 @@ header {
 
 .side-navigation .container {
   position: relative;
-  padding-top: 50%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .side-navigation .background {
@@ -192,14 +223,8 @@ header {
 
 
 .hero-wrapper {
-  padding-top: 20%;
+  padding-top: 7rem;
   padding-bottom: 5rem;
-}
-
-@media screen and (min-width: 768px) {
-  .hero-wrapper {
-    padding-top: 7rem;
-  }
 }
 
 .greeting {
@@ -214,6 +239,18 @@ header {
   font-family: 'COCOGOOSE', sans-serif;
   line-height: 2rem;
   font-size: 1.8rem;
+}
+
+@media screen and (min-width: 576px) {
+  .intro br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .intro br {
+    display: inline;
+  }
 }
 
 .hero-wrapper {
@@ -293,6 +330,12 @@ header {
   }
 }
 
+.program-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .program-container .title {
   font-size: 1.5rem;
   margin-bottom: 2rem;
@@ -301,24 +344,27 @@ header {
 
 .program-detail {
   padding: 1rem;
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 1rem;
   background: rgba(255, 255, 255, 0.1);
   margin-top: .8rem;
-}
-
-.program-detail .icon {
   display: flex;
   align-items: center;
+
+}
+
+.program-detail h5 {
   color: var(--primary-orange);
-  font-size: .875rem;
-  gap: .5rem;
+  font-size: .9rem;
+  line-height: 1.2rem;
+  margin-right: 1rem;
+}
+
+.program-detail img {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 1rem;
 }
 
 .program-detail p {
-  grid-column-start: 3;
-  grid-column-end: 7;
   font-size: .75rem;
   text-align: left;
   color: var(--secondary-white);
@@ -341,13 +387,10 @@ header {
     margin-bottom: 3.5rem;
   }
 
-  .program-detail .icon {
-    flex-direction: column;
-  }
-
-  .program-detail .icon h5 {
+  .program-detail h5 {
     margin: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
   }
 
   .program-detail img {
@@ -422,8 +465,10 @@ header {
   margin-top: 2.5rem;
 }
 
-.game-details-container:nth-last-child(-n+5) {
-  display: none;
+@media screen and (max-width: 576px) {
+  .game-details-container:nth-last-child(-n+5) {
+      display: none;
+  }
 }
 
 .game-snapshot {
@@ -527,6 +572,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 2rem 0;
 }
 

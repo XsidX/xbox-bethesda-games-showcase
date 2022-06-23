@@ -113,8 +113,8 @@
 
 .showcase-thumbnail {
   position: relative;
-  height: 25vh;
-  margin: 0 2rem;
+  height: 35vh;
+  margin: 0 2rem 2rem 2rem;
   cursor: pointer;
 }
 
@@ -167,7 +167,7 @@
 
   .showcase-thumbnail {
     margin: 0 1.5rem 0 0;
-    height: 45vh;
+    height: 48vh;
     width: 38vw;
   }
 
