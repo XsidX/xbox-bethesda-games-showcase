@@ -58,6 +58,12 @@ a {
   }
 }
 
+.call-to-action a {
+  color: var(--secondary-white);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 .title::after {
   display: flex;
   content: "";
@@ -409,12 +415,6 @@ header {
   border: none;
   background-color: var(--primary-orange);
   padding: 1.4rem;
-}
-
-.call-to-action a {
-  color: var(--secondary-white);
-  font-size: 1rem;
-  font-weight: 700;
 }
 
 .call-to-action-lg-screen {
