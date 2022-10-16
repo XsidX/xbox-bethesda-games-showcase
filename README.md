@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://xsidx.github.io/xbox-bethesda-games-showcase)
+[Live Demo Link](https://xbox-bethesda-showcase-sid.netlify.app/)
 
 ## Getting Started
 
