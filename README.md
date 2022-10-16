@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Xbox & Bethesda Games Showcase
 
-> In this project, I build an online webiste for the Xbox & Bethesda games showcase.
+> This is a dynamic, two page, responsive website for the Xbox & Bethesda games showcase. The games section on the homepage is displayed dynamically from an array of objects using javascript.
 
 ## Built With
 
@@ -10,9 +10,9 @@
 - CSS
 - Javascript
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://xsidx.github.io/xbox-bethesda-games-showcase/)
+[Live Demo Link](https://xsidx.github.io/xbox-bethesda-games-showcase)
 
 ## Getting Started
 
